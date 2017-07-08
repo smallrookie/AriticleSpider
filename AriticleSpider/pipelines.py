@@ -7,6 +7,7 @@
 
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exporters import JsonItemExporter
+from twisted.enterprise import adbapi
 
 import MySQLdb
 import MySQLdb.cursors
@@ -32,21 +33,45 @@ class ArticleImagePipeline(ImagesPipeline):
         return item
 
 
-class MysqlPipeline(object):
-    # 连接数据库及插入数据操作
 
-    def __init__(self):
-        self.conn = MySQLdb.connect('127.0.0.1', 'root', '123456', 'article_spider', charset='utf8', use_unicode=True)
-        self.cursor = self.conn.cursor()
+class MysqlTwistedPipline(object):
+    # 采用连接池方式连接数据库并插入数据
+
+    def __init__(self, dbpool):
+        self.dbpool = dbpool
+
+    @classmethod
+    def from_settings(cls, settings):
+        dbparms = dict(
+            host=settings["MYSQL_HOST"],
+            db=settings["MYSQL_DBNAME"],
+            user=settings["MYSQL_USER"],
+            passwd=settings["MYSQL_PASSWORD"],
+            charset='utf8',
+            cursorclass=MySQLdb.cursors.DictCursor,
+            use_unicode=True,
+        )
+        dbpool = adbapi.ConnectionPool("MySQLdb", **dbparms)
+        return cls(dbpool)
 
     def process_item(self, item, spider):
+        # 使用twisted将MySQL插入变成异步执行
+        query = self.dbpool.runInteraction(self.do_insert, item)
+        # 处理异常
+        query.addErrback(self.handle_error)
+
+    def handle_error(self, failure):
+        # 处理异步插入的异常
+        print(failure)
+
+    def do_insert(self, cursor, item):
+        # 执行具体的插入
         insert_sql = """
-                    insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, front_image_path, comments_num, praise_num, tags, front_image_url)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                """
-        # execute()与commit()为同步操作
-        self.cursor.execute(insert_sql,
-                            (item["title"], item["url"], item["create_date"], item["fav_num"], item["content"],
-                             item["url_object_id"], item["front_image_path"], item["comments_num"], item["praise_num"],
-                             item["tags"], item["front_image_url"]))
-        self.conn.commit()
+            insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, 
+            front_image_path, comments_num, praise_num, tags, front_image_url)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """
+        cursor.execute(insert_sql,
+                       (item["title"], item["url"], item["create_date"], item["fav_num"], item["content"],
+                        item["url_object_id"], item["front_image_path"], item["comments_num"], item["praise_num"],
+                        item["tags"], item["front_image_url"]))

@@ -69,8 +69,8 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     # 调用自定义的ArticleImagePipeline下载文章封面图并获取保存路径
     'AriticleSpider.pipelines.ArticleImagePipeline': 1,
-    # 调用MysqlPipeline连接数据库并插入数据
-    'AriticleSpider.pipelines.MysqlPipeline': 2,
+    # 调用MysqlTwistedPipline连接数据库并插入数据
+    'AriticleSpider.pipelines.MysqlTwistedPipline': 2,
 }
 # 将item中的文章封面图URL传递至ArticleImagePipeline
 IMAGES_URLS_FIELD = "front_image_url"

@@ -28,7 +28,7 @@ class ArticleItemLoader(ItemLoader):
 class JobBoleArticleItem(scrapy.Item):
     # 自定义item，用于数据的存储
 
-    ## 文章标题
+    # 文章标题
     title = scrapy.Field()
     # 文章发布时间
     create_date = scrapy.Field(

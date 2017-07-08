@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dcc06b-0e2b-4942-9d37-16790bc28ae7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/utils/jobbole_opration.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/0a03ec3e1ce1b668b8db0234731fac4915b1064d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/1920e6dd8243dc236fa1e8abd1a1fa16a072ff2d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/1ded311d6e5e90e971d375817a4f5efb8e7096f1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/1f020353984ba3d88d0e0349f7b5decd4ed6dd8a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/233e3fbaa3d4c54374b5477ad13750ab622a9d4c.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/27823440373381b04421fc70634750dfcfca3b30.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/2f774db07a589d09c8c152c0bb471f04c956412e.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/41b4657e9821155bd3325ef1334ebce10189b7f6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/47088ef57f09c838c2a3bc97ec1b49801c291a32.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/4f98c9ecf55b5d6ac63cc8ecc27f2fa194e86ad0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/506f77aba037cb2bd78064b80470760038a6d491.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/55b1132af682daa4944e35728414d9d865d4670f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/5b48951660a3dd574009dd9dfb69981fce68b26a.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6032d7dc1233f95d17343e58eeaff17e6a49cb23.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6085acc0af4696f5d49164561c6bc4f9b590fc26.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6a97cfe7f7f14e4e38447a57e0284a25fe3ecdad.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6fea19912aa975484ea8f1389d4c93135791ba7b.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/80ab850be768ae7a65c51623fb321921ff892d2c.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/9a8539839727cdcb8492a550ef7b35f838a85f14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/9d7d43ff6c607ddfd743f689be22c76d0a21bd71.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/a6e095311cee5dbfc6a3b7e5127f63181f1ad769.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/af2aa7503b9a5a4b73437fab997885a3d7f1ae8e.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/b115c033c502899f0a878f54b5a62805b0d233b4.jpg" afterPath="" />
@@ -24,13 +30,13 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/d1b17b98748a74826464a08e6d30a4ee1b15b171.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/d3d1a5ad957de059084690efae6fdfaa3527e1c3.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/dd36e1ac9db2af41888b4a17b76a865bb91d4510.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/dfa8fff3b99c7011381e1666d2c2ba0015a7c34f.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/e4ef10899dd499cd91f9102bff717ea3d2311bfc.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/e4f781fe9bcbb1b14511417240112232bbec89cd.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/items.py" afterPath="$PROJECT_DIR$/AriticleSpider/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/pipelines.py" afterPath="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/settings.py" afterPath="$PROJECT_DIR$/AriticleSpider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,7 +46,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499516452711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499516850350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -48,8 +54,8 @@
       <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="e#152#165#0" expanded="true" />
               </folding>
@@ -57,14 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="792">
+              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="25" />
               <folding>
                 <element signature="e#193#243#0" expanded="true" />
-                <marker date="1499516452566" expanded="true" signature="1294:1518" ph="insert into jobbole_article... " />
+                <marker date="1499516772156" expanded="true" signature="1968:2197" ph="insert into jobbole_article... " />
               </folding>
             </state>
           </provider>
@@ -73,7 +79,7 @@
       <file leaf-file-name="jobbole.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="419">
               <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="e#38#51#0" expanded="true" />
@@ -82,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+            <state relative-caret-position="-172">
+              <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -114,10 +120,10 @@
       <list>
         <option value="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/jobbole_opration.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
       </list>
     </option>
   </component>
@@ -431,16 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="e#38#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -467,32 +463,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="330">
+          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#152#165#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#38#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="792">
+          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="e#193#243#0" expanded="true" />
-            <marker date="1499516452566" expanded="true" signature="1294:1518" ph="insert into jobbole_article... " />
+            <marker date="1499516772156" expanded="true" signature="1968:2197" ph="insert into jobbole_article... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="79" column="50" lean-forward="true" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

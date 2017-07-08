@@ -7,7 +7,7 @@ import re
 
 from scrapy.http import Request
 from urllib import parse
-from AriticleSpider.items import JobBoleArticleItem
+from AriticleSpider.items import JobBoleArticleItem, ArticleItemLoader
 from AriticleSpider.utils.common import get_md5
 
 
@@ -41,53 +41,34 @@ class JobboleSpider(scrapy.Spider):
     def parse_detail(self, response):
         # 提取文章的具体字段
 
-        # 通过css选择器提取文章的具体字段
-        # 文章标题
-        title = response.css(".entry-header h1::text").extract()[0]
         # 文章封面图
         front_image_url = response.meta.get("front_image_url", "")
+
+        # 通过自定义的item loader机制加载item
+        item_loader = ArticleItemLoader(item=JobBoleArticleItem(), response=response)
+        # 文章标题
+        item_loader.add_css("title", ".entry-header h1::text")
+        # 文章详情页URL
+        item_loader.add_value("url", response.url)
+        # 文章详情页URL的MD5
+        item_loader.add_value("url_object_id", get_md5(response.url))
         # 文章发布时间
-        create_date = response.css("p.entry-meta-hide-on-mobile::text").extract()[0].strip().replace('·', '').strip()
+        item_loader.add_css("create_date", "p.entry-meta-hide-on-mobile::text")
+        # 文章封面图URL
+        item_loader.add_value("front_image_url", [front_image_url])
         # 点赞数
-        praise_num = response.css(".vote-post-up h10::text").extract()[0]
-        # 收藏数
-        fav_num = self.get_num(response.css("span.bookmark-btn::text").extract()[0])
+        item_loader.add_css("praise_num", ".vote-post-up h10::text")
         # 评论数
-        comments_num = self.get_num(response.css("a[href='#article-comment'] span::text").extract()[0])
-        # 文章内容
-        content = response.css("div.entry").extract()[0]
+        item_loader.add_css("comments_num", "a[href='#article-comment'] span::text")
+        # 收藏数
+        item_loader.add_css("fav_num", ".bookmark-btn::text")
         # 文章标签
-        tags_list = response.css("p.entry-meta-hide-on-mobile a::text").extract()
-        # 去除标签中的评论
-        tags_list = [element for element in tags_list if not element.strip().endswith('评论')]
-        tags = ','.join(tags_list)
+        item_loader.add_css("tags", "p.entry-meta-hide-on-mobile a::text")
+        # 文章内容
+        item_loader.add_css("content", "div.entry")
 
-        # 实例化JobBoleArticleItem
-        article_item = JobBoleArticleItem()
-
-        article_item["title"] = title
-        article_item['url_object_id'] = get_md5(response.url)
-        article_item["url"] = response.url
-        article_item["create_date"] = create_date
-        # 由于ImagesPipeline中url的值为list类型，故此需将front_image_url转为list类型
-        article_item["front_image_url"] = [front_image_url]
-        article_item["praise_num"] = praise_num
-        article_item["comments_num"] = comments_num
-        article_item["fav_num"] = fav_num
-        article_item["tags"] = tags
-        article_item["content"] = content
+        article_item = item_loader.load_item()
 
         yield article_item
 
         pass
-
-
-    def get_num(self, value):
-        # 利用正则表达式获取相应的数值
-
-        match_re = re.match('.*(\d+).*', value)
-        if match_re:
-            num = int(match_re.group(1))
-        else:
-            num = 0
-        return num

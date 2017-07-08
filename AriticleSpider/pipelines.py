@@ -8,6 +8,8 @@
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exporters import JsonItemExporter
 
+import MySQLdb
+import MySQLdb.cursors
 
 class AriticlespiderPipeline(object):
     def process_item(self, item, spider):
@@ -22,22 +24,29 @@ class ArticleImagePipeline(ImagesPipeline):
             for ok, value in results:
                 # 获取文章封面图保存路径
                 image_file_path = value["path"]
+                # 获取文章封面图URL
+                image_url = value["url"]
             item["front_image_path"] = image_file_path
+            # 将front_image_url转为str类型进行数据库存储
+            item["front_image_url"] = image_url
         return item
 
 
-class JsonExporterPipeline(object):
-    # 调用scrapy提供的json export导出json文件
+class MysqlPipeline(object):
+    # 连接数据库及插入数据操作
 
     def __init__(self):
-        self.file = open('article_explort.json', 'wb')
-        self.exporter = JsonItemExporter(self.file, encoding='utf-8', ensure_ascii=False)
-        self.exporter.start_exporting()
-
-    def close_spider(self, spider):
-        self.exporter.finish_exporting()
-        self.file.close()
+        self.conn = MySQLdb.connect('127.0.0.1', 'root', '123456', 'article_spider', charset='utf8', use_unicode=True)
+        self.cursor = self.conn.cursor()
 
     def process_item(self, item, spider):
-        self.exporter.export_item(item)
-        return item
+        insert_sql = """
+                    insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, front_image_path, comments_num, praise_num, tags, front_image_url)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """
+        # execute()与commit()为同步操作
+        self.cursor.execute(insert_sql,
+                            (item["title"], item["url"], item["create_date"], item["fav_num"], item["content"],
+                             item["url_object_id"], item["front_image_path"], item["comments_num"], item["praise_num"],
+                             item["tags"], item["front_image_url"]))
+        self.conn.commit()

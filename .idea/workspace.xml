@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dcc06b-0e2b-4942-9d37-16790bc28ae7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/items.py" afterPath="$PROJECT_DIR$/AriticleSpider/items.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/27823440373381b04421fc70634750dfcfca3b30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/55b1132af682daa4944e35728414d9d865d4670f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6a97cfe7f7f14e4e38447a57e0284a25fe3ecdad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6fea19912aa975484ea8f1389d4c93135791ba7b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/9a8539839727cdcb8492a550ef7b35f838a85f14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/a6e095311cee5dbfc6a3b7e5127f63181f1ad769.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/cb6856e79b5025e46c895464e60a86e2f6c4e811.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/d3d1a5ad957de059084690efae6fdfaa3527e1c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/e4f781fe9bcbb1b14511417240112232bbec89cd.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/pipelines.py" afterPath="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/settings.py" afterPath="$PROJECT_DIR$/AriticleSpider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,16 +23,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499504854374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499505966590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="44">
+              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -44,12 +50,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="174">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="36" />
+              <folding>
+                <element signature="e#193#243#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +65,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+            <state relative-caret-position="198">
+              <caret line="72" column="55" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -88,16 +96,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
       </list>
     </option>
   </component>
@@ -156,28 +164,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AriticleSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AriticleSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AriticleSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AriticleSpider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="full" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,7 +372,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -394,7 +381,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -417,13 +404,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AriticleSpider/pipelines.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -455,27 +435,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="44">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="75" column="40" lean-forward="false" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        <state relative-caret-position="198">
+          <caret line="72" column="55" lean-forward="false" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="174">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <element signature="e#193#243#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

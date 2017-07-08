@@ -67,11 +67,10 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'AriticleSpider.pipelines.AriticlespiderPipeline': 300,
-    # 调用scrapy提供的ImagesPipeline下载文章封面图
-    # 'scrapy.pipelines.images.ImagesPipeline': 1,
     # 调用自定义的ArticleImagePipeline下载文章封面图并获取保存路径
     'AriticleSpider.pipelines.ArticleImagePipeline': 1,
+    # 调用scrapy提供的JsonExporterPipeline导出json文件
+    'AriticleSpider.pipelines.JsonExporterPipeline': 2,
 }
 # 将item中的文章封面图URL传递至ArticleImagePipeline
 IMAGES_URLS_FIELD = "front_image_url"

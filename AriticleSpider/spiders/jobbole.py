@@ -54,8 +54,8 @@ class JobboleSpider(scrapy.Spider):
         item_loader.add_value("url_object_id", get_md5(response.url))
         # 文章发布时间
         item_loader.add_css("create_date", "p.entry-meta-hide-on-mobile::text")
-        # 文章封面图URL
-        item_loader.add_value("front_image_url", [front_image_url])
+        # 文章封面图URL，由于
+        item_loader.add_value("front_image_url", front_image_url)
         # 点赞数
         item_loader.add_css("praise_num", ".vote-post-up h10::text")
         # 评论数
@@ -70,5 +70,3 @@ class JobboleSpider(scrapy.Spider):
         article_item = item_loader.load_item()
 
         yield article_item
-
-        pass

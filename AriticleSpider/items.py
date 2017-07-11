@@ -21,7 +21,7 @@ class ArticleItemLoader(ItemLoader):
     # 自定义itemloader
 
     # TakeFirst()默认返回第一个不为None的值
-    # 由于在爬取过程中，一些值为None造成项目异常，故采用TakeFirst()重写default_output_processor
+    # 由于在爬取过程中，一些值为None造成项目异常，故采用TakeFirst()重写default_output_processor，其返回值为str类型
     default_output_processor = TakeFirst()
 
 
@@ -40,6 +40,7 @@ class JobBoleArticleItem(scrapy.Item):
     url_object_id = scrapy.Field()
     # 文章封面图
     front_image_url = scrapy.Field(
+        # 由于采用自定义
         output_processor=MapCompose(return_value)
     )
     # 文章封面图存储路径

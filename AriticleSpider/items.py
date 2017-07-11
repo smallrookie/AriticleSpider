@@ -40,7 +40,6 @@ class JobBoleArticleItem(scrapy.Item):
     url_object_id = scrapy.Field()
     # 文章封面图
     front_image_url = scrapy.Field(
-        # 由于采用自定义
         output_processor=MapCompose(return_value)
     )
     # 文章封面图存储路径

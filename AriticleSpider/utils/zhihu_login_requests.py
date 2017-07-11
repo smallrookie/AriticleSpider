@@ -60,11 +60,11 @@ def get_xsrf():
 
     response = session.get("https://www.zhihu.com", headers=header)
     match_obj = re.match('.*name="_xsrf" value="(.*?)"', response.text)
-    try:
-        if match_obj:
-            return (match_obj.group(1))
-    except:
+    if match_obj:
+        return (match_obj.group(1))
+    else:
         print("获取xsrf失败！\n")
+        return ""
 
 
 def get_captcha():
@@ -100,7 +100,7 @@ def zhihu_login():
     # 邮箱登录
     else:
         if "@" in account:
-            post_url = "https://www.zhihu.com/login/phone_num"
+            post_url = "https://www.zhihu.com/login/email"
             # 请求获取验证码
             captcha = get_captcha()
             post_data = {

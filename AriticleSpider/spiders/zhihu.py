@@ -5,6 +5,14 @@ import time
 import json
 
 from scrapy.http import Request
+from AriticleSpider.items import ZhihuQuestionItemLoader, ZhihuQuestionItem, ZhihuAnswerItemLoader, ZhihuAnswerItem
+
+try:
+    # 若开发环境为Python 2.X
+    import urlparse as parse
+except:
+    # 若开发环境为Python 3.X
+    from urllib import parse
 
 
 class ZhihuSpider(scrapy.Spider):
@@ -20,6 +28,42 @@ class ZhihuSpider(scrapy.Spider):
     }
 
     def parse(self, response):
+        '''
+        提取HTML页面中的所有URL，并跟踪这些URL进行进一步爬取
+        如果提取的URL中格式为 /question/xxx 就下载之后直接进入解析函数
+        '''
+        all_urls = response.css("a::attr(href)").extract()
+        # 将获取的url与知乎主域名拼接成完整的url链接
+        all_urls = [parse.urljoin(response.url, url) for url in all_urls]
+        # 将https开始的url保存至all_urls列表中，过滤其他url
+        all_urls = filter(lambda x: True if x.startswith("https") else False, all_urls)
+        for url in all_urls:
+            match_obj = re.match("(.*zhihu.com/question/(\d+))(/|$).*", url)
+            if match_obj:
+                request_url = match_obj.group(1)
+                question_id = int(match_obj.group(2))
+
+                yield scrapy.Request(request_url, headers=self.header, meta={"zhihu_id": question_id},
+                                     callback=self.parse_question)
+
+    def parse_question(self, response):
+        # 处理question页面，从页面中提取具体的question item
+
+        zhihu_id = response.meta.get("zhihu_id", "")
+
+        item_loader = ZhihuQuestionItemLoader(item=ZhihuQuestionItem(), response=response)
+
+        item_loader.add_css("title", "h1.QuestionHeader-title::text")
+        item_loader.add_css("topics", ".QuestionHeader-topics .Popover div::text")
+        item_loader.add_css("content", ".QuestionHeader-detail")
+        item_loader.add_value("url", response.url)
+        item_loader.add_value("zhihu_id", zhihu_id)
+        item_loader.add_css("answer_num", ".List-headerText span::text")
+        item_loader.add_css("commments_num", ".QuestionHeaderActions button::text")
+        item_loader.add_css("watch_user_num", ".NumberBoard-value::text")
+
+        question_item = item_loader.load_item()
+
         pass
 
     def start_requests(self):
@@ -62,7 +106,9 @@ class ZhihuSpider(scrapy.Spider):
             # 获取验证码
             t = str(int(time.time() * 1000))
             captcha_url = "https://www.zhihu.com/captcha.gif?r={0}&type=login".format(t)
-            yield scrapy.Request(captcha_url, headers=self.header, meta={"post_data":post_data}, callback=self.login)
+            cookies = {}
+
+            yield scrapy.Request(captcha_url, headers=self.header, meta={"post_data": post_data}, callback=self.login)
 
     def login(self, response):
         # scrapy模拟登录
@@ -79,7 +125,6 @@ class ZhihuSpider(scrapy.Spider):
             f.close()
         captcha = input("请输入验证码>")
         post_data["captcha"] = captcha
-
         return [scrapy.FormRequest(
             url=post_url,
             formdata=post_data,
@@ -93,6 +138,7 @@ class ZhihuSpider(scrapy.Spider):
         text_json = json.loads(response.text)
         if "msg" in text_json and text_json["msg"] == "登录成功":
             for url in self.start_urls:
+                # 此处未调用callback函数，将默认回调parse()
                 yield scrapy.Request(url, dont_filter=True, headers=self.header)
         else:
             print("登录失败！\n")

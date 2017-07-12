@@ -2,16 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dcc06b-0e2b-4942-9d37-16790bc28ae7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/utils/cookies.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/utils/index_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/0a03ec3e1ce1b668b8db0234731fac4915b1064d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/1920e6dd8243dc236fa1e8abd1a1fa16a072ff2d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/1ded311d6e5e90e971d375817a4f5efb8e7096f1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/233e3fbaa3d4c54374b5477ad13750ab622a9d4c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/3f0be7614d3c4b769873121d69a7e1ad5ae8b755.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/41b4657e9821155bd3325ef1334ebce10189b7f6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/47088ef57f09c838c2a3bc97ec1b49801c291a32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/4f98c9ecf55b5d6ac63cc8ecc27f2fa194e86ad0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/55b1132af682daa4944e35728414d9d865d4670f.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/5e8775a4506c4ad37e2e965d436efb7888507510.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6032d7dc1233f95d17343e58eeaff17e6a49cb23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6085acc0af4696f5d49164561c6bc4f9b590fc26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/63f2aa24b2b070edaefbb38b67ace3ebd11241ce.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/6fea19912aa975484ea8f1389d4c93135791ba7b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/80ab850be768ae7a65c51623fb321921ff892d2c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/9a8539839727cdcb8492a550ef7b35f838a85f14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/a6e095311cee5dbfc6a3b7e5127f63181f1ad769.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/b115c033c502899f0a878f54b5a62805b0d233b4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/bb38d11fb4038702790e0370ed966c50f186ff40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/cb6856e79b5025e46c895464e60a86e2f6c4e811.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/d1b17b98748a74826464a08e6d30a4ee1b15b171.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/d3d1a5ad957de059084690efae6fdfaa3527e1c3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/dd36e1ac9db2af41888b4a17b76a865bb91d4510.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/e4ef10899dd499cd91f9102bff717ea3d2311bfc.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/captcha.jpg" afterPath="$PROJECT_DIR$/captcha.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/items.py" afterPath="$PROJECT_DIR$/AriticleSpider/items.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/settings.py" afterPath="$PROJECT_DIR$/AriticleSpider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article_spider.sql" afterPath="$PROJECT_DIR$/article_spider.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,59 +43,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AriticleSpider$zhihu_login_requests.coverage" NAME="zhihu_login_requests Coverage Results" MODIFIED="1499844245755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/utils" />
-    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499863994182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1499864936496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zhihu.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="26" column="47" lean-forward="false" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-              <folding>
-                <marker date="1499750611985" expanded="true" signature="1968:2197" ph="insert into jobbole_article... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="198">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="70" column="57" lean-forward="true" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="captcha.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/captcha.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -107,15 +87,15 @@
       <list>
         <option value="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/jobbole_opration.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/index_page.html" />
         <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/cookies.txt" />
-        <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -128,7 +108,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -150,6 +130,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,9 +175,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="full" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,19 +439,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19575115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -458,6 +458,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -476,8 +477,13 @@
           <line>99</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="90" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -496,13 +502,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="78" column="27" lean-forward="true" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2288">
@@ -510,13 +510,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/cookies.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/cookies.txt" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -539,13 +533,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="78" column="36" lean-forward="true" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -568,13 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -596,13 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -617,13 +593,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1738">
@@ -680,24 +650,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/captcha.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/index_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/captcha.jpg" />
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/index_page.html" />
     <entry file="file://D:/Python/Python35/scrapyenv/Lib/site-packages/requests/sessions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2092">
           <caret line="381" column="46" lean-forward="true" selection-start-line="381" selection-start-column="46" selection-end-line="381" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,13 +673,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/cookies.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/cookies.txt" />
     <entry file="file://D:/Python/Python35/scrapyenv/Lib/site-packages/scrapy/http/request/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-202">
@@ -745,21 +697,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
     <entry file="file://D:/Python/Python35/scrapyenv/Lib/site-packages/scrapy/downloadermiddlewares/cookies.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="667" column="0" lean-forward="false" selection-start-line="667" selection-start-column="0" selection-end-line="667" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,18 +728,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
+    <entry file="file://$PROJECT_DIR$/captcha.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        <state relative-caret-position="285">
+          <caret line="72" column="54" lean-forward="true" selection-start-line="72" selection-start-column="54" selection-end-line="72" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="1320">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -813,34 +759,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="1562">
+          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+          <folding>
+            <element signature="e#38#51#0" expanded="true" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="70" column="57" lean-forward="true" selection-start-line="70" selection-start-column="57" selection-end-line="70" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captcha.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/zhihu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="154">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

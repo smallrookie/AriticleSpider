@@ -66,12 +66,6 @@ class JobBoleArticleItem(scrapy.Item):
     content = scrapy.Field()
 
 
-class ZhihuQuestionItemLoader(ItemLoader):
-    # 自定义知乎问题itemloader
-
-    default_output_processor = TakeFirst()
-
-
 class ZhihuQuestionItem(scrapy.Item):
     # 自定义知乎问题item，用于数据存储
 
@@ -85,12 +79,6 @@ class ZhihuQuestionItem(scrapy.Item):
     watch_user_num = scrapy.Field()
     click_num = scrapy.Field()
     crawl_time = scrapy.Field()
-
-
-class ZhihuAnswerItemLoader(ItemLoader):
-    # 自定义知乎回答itemloader
-
-    default_output_processor = TakeFirst()
 
 
 class ZhihuAnswerItem(scrapy.Item):

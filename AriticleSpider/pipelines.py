@@ -12,6 +12,7 @@ from twisted.enterprise import adbapi
 import MySQLdb
 import MySQLdb.cursors
 
+
 class AriticlespiderPipeline(object):
     def process_item(self, item, spider):
         return item
@@ -31,7 +32,6 @@ class ArticleImagePipeline(ImagesPipeline):
             # 将front_image_url转为str类型进行数据库存储
             item["front_image_url"] = image_url
         return item
-
 
 
 class MysqlTwistedPipline(object):
@@ -65,12 +65,9 @@ class MysqlTwistedPipline(object):
         print(failure)
 
     def do_insert(self, cursor, item):
-        # 执行具体的插入
-        insert_sql = """
-            insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, 
-            front_image_path, comments_num, praise_num, tags, front_image_url)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """
+        # 执行具体的插入，根据不同的item构建不同的sql语句将数据保存至Mysql数据库
+
+        insert_sql, params = item.get_insert_sql()
         cursor.execute(insert_sql,
                        (item["title"], item["url"], item["create_date"], item["fav_num"], item["content"],
                         item["url_object_id"], item["front_image_path"], item["comments_num"], item["praise_num"],

@@ -65,6 +65,19 @@ class JobBoleArticleItem(scrapy.Item):
     # 文章内容
     content = scrapy.Field()
 
+    def get_insert_sql(self):
+        insert_sql = """
+                    insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, 
+                    front_image_path, comments_num, praise_num, tags, front_image_url)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    """
+
+        params = (self["title"], self["url"], self["create_date"], self["fav_num"], self["content"],
+                  self["url_object_id"], self["front_image_path"], self["comments_num"], self["praise_num"],
+                  self["tags"], self["front_image_url"])
+
+        return insert_sql, params
+
 
 class ZhihuQuestionItem(scrapy.Item):
     # 自定义知乎问题item，用于数据存储

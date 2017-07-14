@@ -25,14 +25,3 @@ def return_value(value):
     # 覆盖default_output_processor = TakeFirst()，将front_image_url的值变回list类型
 
     return value
-
-
-def get_num(value):
-    # 利用正则表达式获取相应的数值
-
-    match_re = re.match(".*?(\d+).*", value)
-    if match_re:
-        num = int(match_re.group(1))
-    else:
-        num = 0
-    return num

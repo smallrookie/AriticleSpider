@@ -9,6 +9,8 @@ import scrapy
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, TakeFirst, Join
 from AriticleSpider.utils.jobbole_opration import *
+from AriticleSpider.utils.common import extract_num
+from AriticleSpider.settings import SQL_DATETIME_FORMAT, SQL_DATE_FORMAT
 
 
 class AriticlespiderItem(scrapy.Item):
@@ -47,15 +49,15 @@ class JobBoleArticleItem(scrapy.Item):
     front_image_path = scrapy.Field()
     # 点赞数
     praise_num = scrapy.Field(
-        input_processor=MapCompose(get_num)
+        input_processor=MapCompose(extract_num)
     )
     # 评论数
     comments_num = scrapy.Field(
-        input_processor=MapCompose(get_num)
+        input_processor=MapCompose(extract_num)
     )
     # 收藏数
     fav_num = scrapy.Field(
-        input_processor=MapCompose(get_num)
+        input_processor=MapCompose(extract_num)
     )
     # 文章标签
     tags = scrapy.Field(
@@ -66,15 +68,18 @@ class JobBoleArticleItem(scrapy.Item):
     content = scrapy.Field()
 
     def get_insert_sql(self):
+        # 具体实现存储伯乐在线文章的SQL语句
+
         insert_sql = """
-                    insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id, 
+                    insert into jobbole_article(title, url, create_date, fav_num, content, url_object_id,
                     front_image_path, comments_num, praise_num, tags, front_image_url)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s) ON DUPLICATE KEY UPDATE 
+                    content=VALUES(fav_nums)
                     """
 
-        params = (self["title"], self["url"], self["create_date"], self["fav_num"], self["content"],
-                  self["url_object_id"], self["front_image_path"], self["comments_num"], self["praise_num"],
-                  self["tags"], self["front_image_url"])
+        params = (
+            self["title"], self["url"], self["create_date"], self["fav_num"], self["content"], self["url_object_id"],
+            self["front_image_path"], self["comments_num"], self["praise_num"], self["tags"], self["front_image_url"])
 
         return insert_sql, params
 
@@ -82,28 +87,102 @@ class JobBoleArticleItem(scrapy.Item):
 class ZhihuQuestionItem(scrapy.Item):
     # 自定义知乎问题item，用于数据存储
 
+    # 问题id
     zhihu_id = scrapy.Field()
+    # 问题所属话题
     topics = scrapy.Field()
+    # 问题的URL链接
     url = scrapy.Field()
+    # 问题的标题
     title = scrapy.Field()
+    # 问题的内容
     content = scrapy.Field()
+    # 问题的回答数
     answer_num = scrapy.Field()
-    commments_num = scrapy.Field()
+    # 问题的评论数
+    comments_num = scrapy.Field()
+    # 问题的关注人数
     watch_user_num = scrapy.Field()
+    # 问题的浏览数
     click_num = scrapy.Field()
+    # 问题的爬取时间
     crawl_time = scrapy.Field()
+
+    def get_insert_sql(self):
+        # 具体实现存储知乎问题的SQL语句
+
+        insert_sql = """
+            insert into zhihu_question(zhihu_id, topics, url, title, content, answer_num, comments_num, 
+            watch_user_num, click_num, crawl_time)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE content=VALUES(content), answer_num=VALUES(answer_num), comments_num=VALUES(comments_num),
+              watch_user_num=VALUES(watch_user_num), click_num=VALUES(click_num)
+        """
+
+        # 由于itemloader会将item中的值转变为list类型，故需将这些值转为str类型
+        # 此处采用有别于存储伯乐在线文章的方法
+        zhihu_id = self["zhihu_id"][0]
+        topics = ",".join(self["topics"])
+        url = self["url"][0]
+        title = "".join(self["title"])
+        content = "".join(self["content"])
+        answer_num = extract_num("".join(self["answer_num"]))
+        comments_num = extract_num("".join(self["comments_num"]))
+        if len(self["watch_user_num"]) == 2:
+            watch_user_num = int(self["watch_user_num"][0])
+            click_num = int(self["watch_user_num"][1])
+        else:
+            watch_user_num = int(self["watch_user_num"][0])
+            click_num = 0
+
+        crawl_time = datetime.datetime.now().strftime(SQL_DATETIME_FORMAT)
+
+        params = (zhihu_id, topics, url, title, content, answer_num, comments_num,
+                  watch_user_num, click_num, crawl_time,)
+
+        return insert_sql, params
 
 
 class ZhihuAnswerItem(scrapy.Item):
     # 自定义知乎回答item，用于数据存储
 
+    # 问题回答的id
     zhihu_id = scrapy.Field()
+    # 问题回答的url链接
     url = scrapy.Field()
+    # 问题的id
     question_id = scrapy.Field()
+    # 回答者的id
     author_id = scrapy.Field()
+    # 回答的内容
     content = scrapy.Field()
+    # 点赞数
     praise_num = scrapy.Field()
+    # 回答发布时间
     create_time = scrapy.Field()
+    # 回答更新时间
     update_time = scrapy.Field()
-    commments_num = scrapy.Field()
+    # 回答的评论数
+    comments_num = scrapy.Field()
+    # 回答的爬取时间
     crawl_time = scrapy.Field()
+
+    def get_insert_sql(self):
+        # 具体实现存储知乎回答的SQL语句
+
+        insert_sql = """
+            insert into zhihu_answer(zhihu_id, url, question_id, author_id, content, praise_num, create_time,
+            update_time, comments_num, crawl_time)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            ON DUPLICATE KEY UPDATE content=VALUES(content), comments_num=VALUES(comments_num), praise_num=VALUES(praise_num),
+              update_time=VALUES(update_time)
+        """
+        create_time = datetime.datetime.fromtimestamp(self["create_time"]).strftime(SQL_DATE_FORMAT)
+        update_time = datetime.datetime.fromtimestamp(self["update_time"]).strftime(SQL_DATE_FORMAT)
+
+        params = (
+            self["zhihu_id"], self["url"], self["question_id"], self["author_id"], self["content"], self["praise_num"],
+            create_time, update_time, self["comments_num"],
+            self["crawl_time"].strftime(SQL_DATETIME_FORMAT),)
+
+        return insert_sql, params

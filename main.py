@@ -9,7 +9,7 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # 调用execute()执行scrapy命令，爬取伯乐在线
-execute(['scrapy', 'crawl', 'jobbole'])
+# execute(['scrapy', 'crawl', 'jobbole'])
 
 # 调用execute()执行scrapy命令，爬取知乎
-# execute(['scrapy', 'crawl', 'zhihu'])
+execute(['scrapy', 'crawl', 'zhihu'])

@@ -58,9 +58,9 @@ class MysqlTwistedPipline(object):
         # 使用twisted将MySQL插入变成异步执行
         query = self.dbpool.runInteraction(self.do_insert, item)
         # 处理异常
-        query.addErrback(self.handle_error)
+        query.addErrback(self.handle_error, item, spider)
 
-    def handle_error(self, failure):
+    def handle_error(self, failure, item, spider):
         # 处理异步插入的异常
         print(failure)
 
@@ -68,7 +68,4 @@ class MysqlTwistedPipline(object):
         # 执行具体的插入，根据不同的item构建不同的sql语句将数据保存至Mysql数据库
 
         insert_sql, params = item.get_insert_sql()
-        cursor.execute(insert_sql,
-                       (item["title"], item["url"], item["create_date"], item["fav_num"], item["content"],
-                        item["url_object_id"], item["front_image_path"], item["comments_num"], item["praise_num"],
-                        item["tags"], item["front_image_url"]))
+        cursor.execute(insert_sql, params)

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50718
 File Encoding         : 65001
 
-Date: 2017-07-14 20:21:52
+Date: 2017-07-15 15:31:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -36,6 +36,34 @@ CREATE TABLE `jobbole_article` (
 
 -- ----------------------------
 -- Records of jobbole_article
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for lagou_job
+-- ----------------------------
+DROP TABLE IF EXISTS `lagou_job`;
+CREATE TABLE `lagou_job` (
+  `url` varchar(300) NOT NULL,
+  `url_object_url` varchar(50) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `salary` varchar(20) DEFAULT NULL,
+  `job_city` varchar(10) DEFAULT NULL,
+  `work_years` varchar(100) DEFAULT NULL,
+  `degree_need` varchar(30) DEFAULT NULL,
+  `job_type` varchar(20) DEFAULT NULL,
+  `publish_time` varchar(20) NOT NULL,
+  `tags` varchar(100) DEFAULT NULL,
+  `job_advantage` varchar(1000) DEFAULT NULL,
+  `job_desc` longtext NOT NULL,
+  `job_addr` varchar(50) DEFAULT NULL,
+  `company_url` varchar(300) DEFAULT NULL,
+  `company_name` varchar(100) DEFAULT NULL,
+  `crawl_time` datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`url_object_url`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of lagou_job
 -- ----------------------------
 
 -- ----------------------------

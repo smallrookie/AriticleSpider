@@ -29,22 +29,28 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
+# 延迟下载
+DOWNLOAD_DELAY = 10
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+# 禁用cookies
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-# DEFAULT_REQUEST_HEADERS = {
-#   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-#   'Accept-Language': 'en',
-# }
+# 配置默认headers
+DEFAULT_REQUEST_HEADERS = {
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Language': 'zh-CN',
+    "HOST": "www.lagou.com",
+    "Referer": "https://www.lagou.com/",
+    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+}
 
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
@@ -55,7 +61,7 @@ ROBOTSTXT_OBEY = False
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'AriticleSpider.middlewares.MyCustomDownloaderMiddleware': 543,
+#     'AriticleSpider.middlewares.MyCustomDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -69,7 +75,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     # 调用自定义的ArticleImagePipeline下载文章封面图并获取保存路径
     'AriticleSpider.pipelines.ArticleImagePipeline': 1,
-    # # 调用MysqlTwistedPipline连接数据库并插入数据
+    # 调用MysqlTwistedPipline连接数据库并插入数据
     'AriticleSpider.pipelines.MysqlTwistedPipline': 2,
 }
 # 将item中的文章封面图URL传递至ArticleImagePipeline

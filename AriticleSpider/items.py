@@ -186,3 +186,46 @@ class ZhihuAnswerItem(scrapy.Item):
             self["crawl_time"].strftime(SQL_DATETIME_FORMAT),)
 
         return insert_sql, params
+
+
+class LagouJobItemLoader(ItemLoader):
+    # 自定义item loader
+
+    default_output_processor = TakeFirst()
+
+
+class LagouJob(scrapy.Item):
+    # 自定义拉勾网item，用于数据存储
+
+    # 职位名称
+    title = scrapy.Field()
+    # 职位信息URL
+    url = scrapy.Field()
+    # 职位信息URL的MD5值
+    url_object_id = scrapy.Field()
+    # 薪资
+    salary = scrapy.Field()
+    # 职位所在城市
+    job_city = scrapy.Field()
+    # 工作经验
+    work_years = scrapy.Field()
+    # 学历要求
+    degree_need = scrapy.Field()
+    # 职位类型
+    job_type = scrapy.Field()
+    # 发布时间
+    publish_time = scrapy.Field()
+    # 职位诱惑
+    job_advantage = scrapy.Field()
+    # 职位描述
+    job_desc = scrapy.Field()
+    # 工作地址
+    job_addr = scrapy.Field()
+    # 公司名称
+    company_name = scrapy.Field()
+    # 公司信息页面的URL
+    company_url = scrapy.Field()
+    # 职位标签
+    tags = scrapy.Field()
+    # 爬取时间
+    crawl_time = scrapy.Field()

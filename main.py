@@ -12,4 +12,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # execute(['scrapy', 'crawl', 'jobbole'])
 
 # 调用execute()执行scrapy命令，爬取知乎
-execute(['scrapy', 'crawl', 'zhihu'])
+# execute(['scrapy', 'crawl', 'zhihu'])
+
+# 调用execute()执行scrapy命令，爬取拉勾网
+execute(['scrapy', 'crawl', 'lagou'])

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dcc06b-0e2b-4942-9d37-16790bc28ae7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/utils/lagou_opration.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/items.py" afterPath="$PROJECT_DIR$/AriticleSpider/items.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/settings.py" afterPath="$PROJECT_DIR$/AriticleSpider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/lagou.py" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/lagou.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AriticleSpider$zhihu_login_requests.coverage" NAME="zhihu_login_requests Coverage Results" MODIFIED="1499844245755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/utils" />
-    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1500382603217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1500448187407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -32,11 +29,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lagou.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lagou.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/lagou.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="177">
+              <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -47,7 +44,7 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1198">
+            <state relative-caret-position="1298">
               <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="e#193#243#0" expanded="true" />
@@ -56,17 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-945">
-              <caret line="169" column="29" lean-forward="true" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="29" />
+            <state relative-caret-position="1098">
+              <caret line="249" column="59" lean-forward="false" selection-start-line="249" selection-start-column="46" selection-end-line="249" selection-end-column="59" />
               <folding>
-                <marker date="1500363901464" expanded="true" signature="1821:2135" ph="insert into jobbole_article... " />
-                <marker date="1500363901464" expanded="true" signature="3048:3280" ph="insert into zhihu_question... " />
-                <marker date="1500363901464" expanded="true" signature="3281:3459" ph="UPDATE conte... " />
-                <marker date="1500363901464" expanded="true" signature="4993:5230" ph="insert into zhihu_answer... " />
-                <marker date="1500363901464" expanded="true" signature="5231:5374" ph="UPDATE conte... " />
+                <element signature="e#152#165#0" expanded="true" />
+                <marker date="1500447829819" expanded="true" signature="1907:2221" ph="insert into jobbole_article... " />
+                <marker date="1500447829819" expanded="true" signature="3134:3366" ph="insert into zhihu_question... " />
+                <marker date="1500447829819" expanded="true" signature="3367:3545" ph="UPDATE conte... " />
+                <marker date="1500447829819" expanded="true" signature="5079:5316" ph="insert into zhihu_answer... " />
+                <marker date="1500447829819" expanded="true" signature="5317:5460" ph="UPDATE conte... " />
+                <marker date="1500447829819" expanded="true" signature="7193:7485" ph="insert into lagou_job... " />
+                <marker date="1500447829819" expanded="true" signature="7193:7544" ph="insert into lagou_job... " />
+                <marker date="1500447829819" expanded="true" signature="7193:7605" ph="insert into lagou_job... " />
               </folding>
             </state>
           </provider>
@@ -85,7 +86,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="704">
               <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding />
             </state>
@@ -131,9 +132,10 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/middlewares.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/middlewares.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/spiders/lagou.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/utils/lagou_opration.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
       </list>
     </option>
   </component>
@@ -167,7 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,13 +210,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="spiders" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -458,7 +478,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16111952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1633888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -508,13 +528,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -761,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-          <folding>
-            <element signature="e#38#51#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,31 +781,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1100">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="704">
           <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/lagou.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1198">
+        <state relative-caret-position="1298">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="e#193#243#0" expanded="true" />
@@ -803,16 +802,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/lagou_opration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="169" column="29" lean-forward="true" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="29" />
+        <state relative-caret-position="1098">
+          <caret line="249" column="59" lean-forward="false" selection-start-line="249" selection-start-column="46" selection-end-line="249" selection-end-column="59" />
           <folding>
-            <marker date="1500363901464" expanded="true" signature="1821:2135" ph="insert into jobbole_article... " />
-            <marker date="1500363901464" expanded="true" signature="3048:3280" ph="insert into zhihu_question... " />
-            <marker date="1500363901464" expanded="true" signature="3281:3459" ph="UPDATE conte... " />
-            <marker date="1500363901464" expanded="true" signature="4993:5230" ph="insert into zhihu_answer... " />
-            <marker date="1500363901464" expanded="true" signature="5231:5374" ph="UPDATE conte... " />
+            <element signature="e#152#165#0" expanded="true" />
+            <marker date="1500447829819" expanded="true" signature="1907:2221" ph="insert into jobbole_article... " />
+            <marker date="1500447829819" expanded="true" signature="3134:3366" ph="insert into zhihu_question... " />
+            <marker date="1500447829819" expanded="true" signature="3367:3545" ph="UPDATE conte... " />
+            <marker date="1500447829819" expanded="true" signature="5079:5316" ph="insert into zhihu_answer... " />
+            <marker date="1500447829819" expanded="true" signature="5317:5460" ph="UPDATE conte... " />
+            <marker date="1500447829819" expanded="true" signature="7193:7485" ph="insert into lagou_job... " />
+            <marker date="1500447829819" expanded="true" signature="7193:7544" ph="insert into lagou_job... " />
+            <marker date="1500447829819" expanded="true" signature="7193:7605" ph="insert into lagou_job... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/lagou.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="35" column="41" lean-forward="false" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

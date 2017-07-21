@@ -7,7 +7,7 @@
 
 from scrapy import signals
 from fake_useragent import UserAgent
-from tools.crawl_xici_ip import GetIP
+from tools.get_xici_ip import GetIP
 
 
 class AriticlespiderSpiderMiddleware(object):

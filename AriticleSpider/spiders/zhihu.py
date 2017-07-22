@@ -31,6 +31,11 @@ class ZhihuSpider(scrapy.Spider):
         "User-Agent": agent,
     }
 
+    custom_settings = {
+        # 启用cookies
+        "COOKIES_ENABLED": True
+    }
+
     def parse(self, response):
         '''
         提取HTML页面中的所有URL，并跟踪这些URL进行进一步爬取

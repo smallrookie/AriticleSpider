@@ -6,6 +6,9 @@ from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from AriticleSpider.items import LagouJobItemLoader, LagouJob
 from AriticleSpider.utils.common import get_md5
+from selenium import webdriver
+from scrapy.xlib.pydispatch import dispatcher
+from scrapy import signals
 
 
 class LagouSpider(CrawlSpider):
@@ -18,6 +21,18 @@ class LagouSpider(CrawlSpider):
         Rule(LinkExtractor(allow=('gongsi/j\d+.html',)), follow=True),
         Rule(LinkExtractor(allow=r'jobs/\d+.html'), callback='parse_job', follow=True),
     )
+
+    def __init__(self):
+        self.browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromedriver.exe")
+        super(LagouSpider, self).__init__()
+        # spider关闭时，关闭chrome
+        dispatcher.connect(self.spider_closed, signals.spider_closed)
+
+
+    def spider_closed(self, spider):
+        # 关闭chrome
+
+        self.browser.quit()
 
     def parse_job(self, response):
         # 解析拉勾网的职位

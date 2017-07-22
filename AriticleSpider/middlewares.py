@@ -5,9 +5,13 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import time
+
 from scrapy import signals
 from fake_useragent import UserAgent
 from tools.get_xici_ip import GetIP
+from selenium import webdriver
+from scrapy.http import HtmlResponse
 
 
 class AriticlespiderSpiderMiddleware(object):
@@ -83,3 +87,13 @@ class RandomProxyMiddleware(object):
     def process_request(self, request, spider):
         get_ip = GetIP()
         request.meta["proxy"] = get_ip.get_random_ip()
+
+
+class JSPageMiddleware(object):
+    # 通过chrome获取动态页面
+
+    def process_request(self, request, spider):
+        spider.browser.get(request.url)
+        # 防止scrapy下载器重复下载页面
+        return HtmlResponse(url=spider.browser.current_url, body=spider.browser.page_source, encoding="utf-8",
+                            request=request)

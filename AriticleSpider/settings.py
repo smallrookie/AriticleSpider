@@ -59,6 +59,7 @@ COOKIES_ENABLED = False
 DOWNLOADER_MIDDLEWARES = {
     'AriticleSpider.middlewares.RandomUserAgentMiddle': 100,
     'AriticleSpider.middlewares.RandomProxyMiddleware': 200,
+    'AriticleSpider.middlewares.JSPageMiddleware': 300,
     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
 }
 

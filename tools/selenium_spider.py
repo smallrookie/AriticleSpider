@@ -3,7 +3,7 @@ import time
 from selenium import webdriver
 from scrapy.selector import Selector
 
-browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromedriver.exe")
+# browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromedriver.exe")
 
 # 模拟知乎登录
 # browser.get("https://www.zhihu.com/#signin")
@@ -24,11 +24,18 @@ browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromed
 # browser.find_element_by_css_selector(".info_list.login_btn a[node-type='submitBtn']").click()
 
 # 模拟鼠标下滑操作
-browser.get("https://www.oschina.net/blog")
+# browser.get("https://www.oschina.net/blog")
+#
+# time.sleep(5)
+#
+# for i in range(3):
+#     browser.execute_script(
+#         "window.scrollTo(0, document.body.scrollHeight); var lenOfPage=document.body.scrollHeight; return lenOfPage")
+#     time.sleep(3)
 
-time.sleep(5)
-
-for i in range(3):
-    browser.execute_script(
-        "window.scrollTo(0, document.body.scrollHeight); var lenOfPage=document.body.scrollHeight; return lenOfPage")
-    time.sleep(3)
+# 设置chromedriver不加载图片
+chrome_opt = webdriver.ChromeOptions()
+prefs = {"profile.managed_default_content_settings.images":2}
+chrome_opt.add_experimental_option("prefs", prefs)
+browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromedriver.exe", chrome_options=chrome_opt)
+browser.get("https://www.taobao.com")

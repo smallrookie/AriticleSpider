@@ -22,18 +22,6 @@ class LagouSpider(CrawlSpider):
         Rule(LinkExtractor(allow=r'jobs/\d+.html'), callback='parse_job', follow=True),
     )
 
-    def __init__(self):
-        self.browser = webdriver.Chrome(executable_path="D:/Python/chromedriver_win32/chromedriver.exe")
-        super(LagouSpider, self).__init__()
-        # spider关闭时，关闭chrome
-        dispatcher.connect(self.spider_closed, signals.spider_closed)
-
-
-    def spider_closed(self, spider):
-        # 关闭chrome
-
-        self.browser.quit()
-
     def parse_job(self, response):
         # 解析拉勾网的职位
 

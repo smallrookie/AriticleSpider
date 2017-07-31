@@ -8,6 +8,9 @@
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.exporters import JsonItemExporter
 from twisted.enterprise import adbapi
+from w3lib.html import remove_tags
+
+from AriticleSpider.models.es_types import ArticleType
 
 import MySQLdb
 import MySQLdb.cursors
@@ -69,3 +72,28 @@ class MysqlTwistedPipline(object):
 
         insert_sql, params = item.get_insert_sql()
         cursor.execute(insert_sql, params)
+
+
+class ElasticSearchPipeline(object):
+    # 将数据写入es中
+
+    def process_item(self, item, spider):
+        # 将item转换为es的数据
+
+        article = ArticleType()
+        article.title = item["title"]
+        article.create_date = item["create_date"]
+        article.content = remove_tags(item["content"])
+        article.front_image_url = item["front_image_url"]
+        if "front_image_path" in item:
+            article.front_image_path = item["front_image_path"]
+        article.praise_num = item["praise_num"]
+        article.comments_num = item["comments_num"]
+        article.fav_num = item["fav_num"]
+        article.url = item["url"]
+        article.tags = item["tags"]
+        article.meta.id = item["url_object_id"]
+
+        article.save()
+
+        return item

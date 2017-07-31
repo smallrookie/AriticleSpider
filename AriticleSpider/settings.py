@@ -30,7 +30,7 @@ ROBOTSTXT_OBEY = False
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
 # 下载器在下载同一个网站下一个页面前需要等待的时间
-DOWNLOAD_DELAY = 3
+# DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 # CONCURRENT_REQUESTS_PER_DOMAIN = 16
 # CONCURRENT_REQUESTS_PER_IP = 16
@@ -56,12 +56,11 @@ COOKIES_ENABLED = False
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-DOWNLOADER_MIDDLEWARES = {
-    'AriticleSpider.middlewares.RandomUserAgentMiddle': 100,
-    'AriticleSpider.middlewares.RandomProxyMiddleware': 200,
-    'AriticleSpider.middlewares.JSPageMiddleware': 300,
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-}
+# DOWNLOADER_MIDDLEWARES = {
+#     'AriticleSpider.middlewares.RandomUserAgentMiddle': 100,
+#     'AriticleSpider.middlewares.RandomProxyMiddleware': 200,
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+# }
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
@@ -75,7 +74,9 @@ ITEM_PIPELINES = {
     # 调用自定义的ArticleImagePipeline下载文章封面图并获取保存路径
     'AriticleSpider.pipelines.ArticleImagePipeline': 1,
     # 调用MysqlTwistedPipline连接数据库并插入数据
-    'AriticleSpider.pipelines.MysqlTwistedPipline': 2,
+    # 'AriticleSpider.pipelines.MysqlTwistedPipline': 2,
+    # 调用ElasticSearchPipeline将数据保存至elasticsearch
+    'AriticleSpider.pipelines.ElasticSearchPipeline': 2,
 }
 # 将item中的文章封面图URL传递至ArticleImagePipeline
 IMAGES_URLS_FIELD = "front_image_url"

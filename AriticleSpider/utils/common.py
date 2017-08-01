@@ -3,6 +3,10 @@
 import hashlib
 import re
 
+from elasticsearch_dsl.connections import connections
+
+from AriticleSpider.models.es_types import ArticleType
+
 
 # md5函数
 def get_md5(url):
@@ -23,6 +27,28 @@ def extract_num(value):
     else:
         num = 0
     return num
+
+
+def gen_suggestions(index, info_tuple):
+    # 根据字符串生成搜索建议
+
+    used_words = set()
+    suggestions = []
+    es = connections.create_connection(ArticleType._doc_type.using)
+
+    for text, weight in info_tuple:
+        if text:
+            # 调用es的analyze分析字符串
+            words = es.indices.analyze(index=index, analyzer="ik_max_word", params={"filter": ["lowercase"]}, body=text)
+            analyzer_words = set([r["token"] for r in words["tokens"] if len(r["token"]) > 1])
+            new_words = analyzer_words - used_words
+        else:
+            new_words = set()
+
+        if new_words:
+            suggestions.append({"input": list(new_words), "weight": weight})
+
+    return suggestions
 
 
 # 测试MD5函数

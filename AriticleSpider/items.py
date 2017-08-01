@@ -9,11 +9,13 @@ import scrapy
 
 from scrapy.loader import ItemLoader
 from scrapy.loader.processors import MapCompose, TakeFirst, Join
+from w3lib.html import remove_tags
+
 from AriticleSpider.utils.jobbole_opration import *
 from AriticleSpider.utils.lagou_opration import *
-from AriticleSpider.utils.common import extract_num
+from AriticleSpider.utils.common import extract_num, gen_suggestions
 from AriticleSpider.settings import SQL_DATETIME_FORMAT, SQL_DATE_FORMAT
-from w3lib.html import remove_tags
+from AriticleSpider.models.es_types import ArticleType
 
 
 class AriticlespiderItem(scrapy.Item):
@@ -85,6 +87,28 @@ class JobBoleArticleItem(scrapy.Item):
             self["front_image_path"], self["comments_num"], self["praise_num"], self["tags"], self["front_image_url"])
 
         return insert_sql, params
+
+    def save_to_es(self):
+        # 将item转换为es的数据
+
+        article = ArticleType()
+        article.title = self["title"]
+        article.create_date = self["create_date"]
+        article.content = remove_tags(self["content"])
+        article.front_image_url = self["front_image_url"]
+        if "front_image_path" in self:
+            article.front_image_path = self["front_image_path"]
+        article.praise_num = self["praise_num"]
+        article.comments_num = self["comments_num"]
+        article.fav_num = self["fav_num"]
+        article.url = self["url"]
+        article.tags = self["tags"]
+        article.meta.id = self["url_object_id"]
+
+        # 搜索建议词
+        article.suggestions = gen_suggestions(ArticleType._doc_type.index, ((article.title, 10), (article.tags, 7)))
+
+        article.save()
 
 
 class ZhihuQuestionItem(scrapy.Item):

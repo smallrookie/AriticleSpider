@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2dcc06b-0e2b-4942-9d37-16790bc28ae7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AriticleSpider/models/es_types.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/crawl_xici_ip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/get_xici_ip.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tools/ghostdriver.log" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tools/__init__.py" afterPath="$PROJECT_DIR$/AriticleSpider/models/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AriticleSpider.iml" afterPath="$PROJECT_DIR$/.idea/AriticleSpider.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AriticleSpider/images/full/f42d1238aa0f889b8988c70dd7481c7a4bd3b456.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/middlewares.py" afterPath="$PROJECT_DIR$/AriticleSpider/middlewares.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/items.py" afterPath="$PROJECT_DIR$/AriticleSpider/items.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/models/es_types.py" afterPath="$PROJECT_DIR$/AriticleSpider/models/es_types.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/pipelines.py" afterPath="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/settings.py" afterPath="$PROJECT_DIR$/AriticleSpider/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/spiders/lagou.py" afterPath="$PROJECT_DIR$/AriticleSpider/spiders/lagou.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AriticleSpider/utils/common.py" afterPath="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,10 +19,10 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/AriticleSpider$zhihu_login_requests.coverage" NAME="zhihu_login_requests Coverage Results" MODIFIED="1499844245755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/utils" />
     <SUITE FILE_PATH="coverage/AriticleSpider$get_xici_ip.coverage" NAME="get_xici_ip Coverage Results" MODIFIED="1500622888319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/AriticleSpider$es_types.coverage" NAME="es_types Coverage Results" MODIFIED="1501516993122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/models" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$es_types.coverage" NAME="es_types Coverage Results" MODIFIED="1501572469566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/models" />
     <SUITE FILE_PATH="coverage/AriticleSpider$crawl_xici_ip.coverage" NAME="crawl_xici_ip Coverage Results" MODIFIED="1501144508283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AriticleSpider/tools" />
     <SUITE FILE_PATH="coverage/AriticleSpider$selenium_spider.coverage" NAME="selenium_spider Coverage Results" MODIFIED="1500723919688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1501516997463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/AriticleSpider$main.coverage" NAME="main Coverage Results" MODIFIED="1501572475201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/AriticleSpider$main__1_.coverage" NAME="main_redis Coverage Results" MODIFIED="1501054051427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ScrapyRedisTest" />
     <SUITE FILE_PATH="coverage/AriticleSpider$main_redis.coverage" NAME="main_redis Coverage Results" MODIFIED="1501054822879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ScrapyRedisTest" />
   </component>
@@ -54,13 +48,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="353">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
-                <element signature="e#193#243#0" expanded="true" />
+                <element signature="e#193#207#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +63,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1078">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="74" column="55" lean-forward="false" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -79,8 +73,8 @@
       <file leaf-file-name="es_types.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/models/es_types.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -88,12 +82,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="70" column="28" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="70" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="275">
+              <caret line="116" column="10" lean-forward="true" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+              <folding>
+                <element signature="e#152#165#0" expanded="true" />
+                <marker date="1501571776048" expanded="true" signature="1980:2294" ph="insert into jobbole_article... " />
+                <marker date="1501571776048" expanded="true" signature="4013:4245" ph="insert into zhihu_question... " />
+                <marker date="1501571776048" expanded="true" signature="4246:4424" ph="UPDATE conte... " />
+                <marker date="1501571776048" expanded="true" signature="5958:6195" ph="insert into zhihu_answer... " />
+                <marker date="1501571776048" expanded="true" signature="6196:6339" ph="UPDATE conte... " />
+                <marker date="1501571776048" expanded="true" signature="8072:8484" ph="insert into lagou_job... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/common.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-506">
+              <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+              <folding>
+                <element signature="e#16#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,8 +148,6 @@
         <option value="$PROJECT_DIR$/AriticleSpider/utils/jobbole_opration.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/middlewares.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/utils/lagou_opration.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
         <option value="$PROJECT_DIR$/tools/get_xici_ip.py" />
         <option value="$PROJECT_DIR$/tools/crawl_xici_ip.py" />
         <option value="$PROJECT_DIR$/tools/yundama.py" />
@@ -148,9 +160,11 @@
         <option value="$PROJECT_DIR$/ScrapyRedisTest/ScrapyRedisTest/spiders/jobbole.py" />
         <option value="$PROJECT_DIR$/ScrapyRedisTest/ScrapyRedisTest/settings.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/models/es_types.py" />
-        <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/AriticleSpider/settings.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/models/es_types.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/items.py" />
+        <option value="$PROJECT_DIR$/AriticleSpider/utils/common.py" />
       </list>
     </option>
   </component>
@@ -184,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,6 +221,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AriticleSpider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,6 +284,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -525,9 +557,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18154311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -559,44 +592,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AriticleSpider/pipelines.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="99" />
+          <url>file://$PROJECT_DIR$/AriticleSpider/items.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AriticleSpider/pipelines.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/AriticleSpider/pipelines.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="128" />
+          <url>file://$PROJECT_DIR$/AriticleSpider/items.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="129" />
+      <option name="time" value="133" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/zhihu_login_requests.py" />
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/spiders/jobbole.py" />
     <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -721,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/tools/get_xici_ip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1298">
@@ -815,33 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-263">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="70" column="28" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="70" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1078">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AriticleSpider/models/es_types.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,12 +832,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Python/Python35/scrapyenv/Lib/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python35/scrapyenv/Lib/site-packages/elasticsearch_dsl/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python/Python35/scrapyenv/Lib/site-packages/elasticsearch_dsl/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/utils/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding>
+            <element signature="e#16#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AriticleSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="353">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
-            <element signature="e#193#243#0" expanded="true" />
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="74" column="55" lean-forward="false" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/models/es_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AriticleSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="116" column="10" lean-forward="true" selection-start-line="116" selection-start-column="10" selection-end-line="116" selection-end-column="10" />
+          <folding>
+            <element signature="e#152#165#0" expanded="true" />
+            <marker date="1501571776048" expanded="true" signature="1980:2294" ph="insert into jobbole_article... " />
+            <marker date="1501571776048" expanded="true" signature="4013:4245" ph="insert into zhihu_question... " />
+            <marker date="1501571776048" expanded="true" signature="4246:4424" ph="UPDATE conte... " />
+            <marker date="1501571776048" expanded="true" signature="5958:6195" ph="insert into zhihu_answer... " />
+            <marker date="1501571776048" expanded="true" signature="6196:6339" ph="UPDATE conte... " />
+            <marker date="1501571776048" expanded="true" signature="8072:8484" ph="insert into lagou_job... " />
           </folding>
         </state>
       </provider>
